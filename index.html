@@ -19,8 +19,10 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
-                clifford: '#da373d',
+                'gradient-start': '#FF8938',
+                'gradient-end': '#f00',
+                'foot-start': 'rgba(255, 0, 0, 0.10)',
+                'foot-end': 'rgba(255, 137, 56, 0.10)',
               }
             }
           }
@@ -121,16 +123,16 @@
     </section>
     <!--Meet Our Super Client-->
     <section class="my-24">
-      <div class="flex items-center bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 p-20">
+      <div class="flex flex-col lg:flex-row items-center bg-gradient-to-r from-gradient-start to-gradient-end lg:px-16 px-4 py-4 lg:py-20">
         <div class="pr-28">
-          <h2 class="text-4xl text-[#FFF] font-extrabold">Meet Our Super<br>Clients</h2>
+          <h2 class="text-2xl lg:text-4xl text-[#FFF] font-extrabold">Meet Our Super<br>Clients</h2>
           <p class="leading-7 mt-7 text-[#FFF] font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
           <button class="btn btn-primary mt-7">Show All</button>
         </div>
         <!--Review Container-->
         <div class="relative">
           <!--Next-->
-          <div class="opacity-40 z-10 mb-10 bg-[#FFF] rounded-lg p-10 relative">
+          <div class="opacity-40 z-10 mb-10 h-[233px] bg-[#FFF] rounded-lg p-10 relative">
             <div class="absolute -mt-16 -ml-16 border-4 border-white rounded-full"><img src="images/client.png" alt=""></div>
             <p class="text-[#777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
             <h4 class="font-bold">Ilham Yuda</h4>
@@ -140,7 +142,7 @@
             </div>
           </div>
           <!--Current-->
-          <div class="bg-[#FFF] z-20 rounded-lg p-10 absolute w-[396px] top-28 -left-32">
+          <div class="bg-[#FFF] z-20 rounded-lg p-10 absolute h-[233px] w-[380px] lg:w-[396px] bottom-24 lg:top-28 lg:-left-32">
             <div class="absolute -mt-16 -ml-16 border-4 border-white rounded-full"><img src="images/client.png" alt=""></div>
             <p class="text-[#777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
             <h4 class="font-bold">Ilham Yuda</h4>
@@ -150,7 +152,7 @@
             </div>
           </div>
           <!--Previous-->
-          <div class="opacity-40 z-10 bg-[#FFF] rounded-lg p-10 relative">
+          <div class="opacity-40 z-10 bg-[#FFF] h-[233px] rounded-lg p-10 relative">
             <div class="absolute -mt-16 -ml-16 border-4 border-white rounded-full"><img src="images/client.png" alt=""></div>
             <p class="text-[#777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
             <h4 class="font-bold">Ilham Yuda</h4>
@@ -162,10 +164,94 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="text-center">
+        <h2 class="font-extrabold text-4xl">News & Events</h2>
+        <p class="text-[#777] mt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/news-1.png" alt="News" /></figure>
+          <div class="card-body">
+            <p class="text-[#777] font-medium">Feb 05, 2024</p>
+            <h2 class="card-title text-xl font-bold">Collecting 8 points for<br>discount</h2>
+            <p class="text-[#777] font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+            <h3 class="font-bold">Learn More</h3>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/news-1.png" alt="News" /></figure>
+          <div class="card-body">
+            <p class="text-[#777] font-medium">Feb 05, 2024</p>
+            <h2 class="card-title text-xl font-bold">Collecting 8 points for<br>discount</h2>
+            <p class="text-[#777] font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+            <h3 class="font-bold">Learn More</h3>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="images/news-1.png" alt="News" /></figure>
+          <div class="card-body">
+            <p class="text-[#777] font-medium">Feb 05, 2024</p>
+            <h2 class="card-title text-xl font-bold">Collecting 8 points for<br>discount</h2>
+            <p class="text-[#777] font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+            <h3 class="font-bold">Learn More</h3>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-
-  <footer>
-
+<!---->
+  <footer class="mt-10 bg-gradient-to-r p-24 from-foot-start to-foot-end">
+    <div class="flex justify-between">
+      <div>
+        <img src="images/cup.png" alt="">
+      </div>
+      <div class="flex items-center">
+        <p class="font-medium text-[#777]">Ready to get strated?</p>
+        <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end">Get Started</button>
+      </div>
+    </div>
+    <div class="footer p-10 text-base-content">
+      <nav>
+        <header class="footer-title">Services</header> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Company</header> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Legal</header> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav> 
+      <form>
+        <header class="footer-title">Subscribe to our<br>newsletter</header> 
+        <fieldset class="form-control w-80">
+          <div class="join">
+            <input type="text" placeholder="Email Address" class="px-3 bg-transparent border-b-2 border-black outline-none" /> 
+            <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end rounded-full"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <div class="mt-10 flex gap-x-4">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="footer footer-center p-4 mt-10 text-base-content">
+      <aside>
+        <p>&copy;-Azhar Mahmud 2024 UIDesign.to - All rights reserved.</p>
+      </aside>
+    </div>
   </footer>
 </body>
 </html>
